@@ -1,0 +1,119 @@
+
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color:var(--background-color-dark) ;
+}
+.footer-logo {
+    min-width: 145px;
+    height: 31px;
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-right: 0;
+}
+.footer-item:not(:last-child) {
+    margin-bottom: 9px;
+}
+.address {
+    font-style: normal;
+}
+.address-link-address {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--second-title-text-color);
+}
+.address-link-mail,
+.address-link-tel {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-container {
+    display: flex;
+    align-items:baseline;
+    justify-content: space-between;
+}
+.join {
+    width: 206px;
+}
+.join__title {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--second-title-text-color);
+}
+
+.footer-form {
+    min-width : 570px;
+
+}
+.footer-form-title {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--second-title-text-color);
+}
+
+.footer-form-box {
+    display: flex;
+
+}
+.footer-form-mail {
+    min-width: 358px;
+    height: 50px;
+    margin-right: 12px;
+    padding-left: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    outline: none;
+    background-color: transparent;
+    font-size: 16px;
+    line-height: 1.25;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-form-mail:focus {
+    border-color:var(--text-accent) ;
+}
+
+.footer-form-btn {
+    display: flex;
+    font-size: 16px;
+    line-height: 1.87;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    letter-spacing: 0.06em;
+    background-color:var(--text-accent);
+    color: var(--second-title-text-color);
+    cursor: pointer;
+    min-width: 200px;
+    height: 50px;
+    border: transparent;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-form-btn:hover,
+.footer-form-btn:focus {
+    background-color: #188CE8;
+}
+
+.footer-form-icon { 
+    fill: currentColor;
+    margin-left: 10px;
+
+}
