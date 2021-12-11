@@ -1,17 +1,13 @@
-
-
-.section--padding-top {
-    padding-top: 0;
-}
-
 .works {
     display: flex;
 }
-.works__item:not(:last-child) {
-    margin-right: 30px;
-}
+
 .works__item {
     position: relative;
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
 }
 .works__thumb {
     position: absolute;

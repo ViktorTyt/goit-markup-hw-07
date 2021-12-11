@@ -5,10 +5,12 @@
 .features__item {
     display: block;
     width: 270px;
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
 }
-.features__item:not(:last-child) {
-    margin-right: 30px;
-}
+
 .features__name {
     margin-bottom: 10px;
     font-weight: 700;
@@ -18,6 +20,7 @@
     text-transform: uppercase;
     color: var(--main-title-color);
     }
+    
 .features__text {
     font-size: 14px;
     line-height: 1.71;
