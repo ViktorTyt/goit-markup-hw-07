@@ -5,7 +5,7 @@
     background-color:var(--background-color-dark) ;
 }
 
-.footer__container {
+.footer-container {
     display: flex;
     align-items:baseline;
     justify-content: space-between;
@@ -20,20 +20,18 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    @include font ($lh:1.71);
     color: var(--second-title-text-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+    &--color-grey {
+        color: rgba(255, 255, 255, 0.6);
+    }
     &:hover,
     &:focus {
         color: var(--text-accent);
     }
 }
-
-.address__link--color-grey {
-    color: rgba(255, 255, 255, 0.6);
-
-}
-
 
 .join {
     width: 206px;
@@ -41,9 +39,10 @@
 .join__title {
     display: block;
     margin-bottom: 20px;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
+    // font-size: 14px;
+    // line-height: 1.14;
+    // letter-spacing: 0.03em;
+    @include font ();
     text-transform: uppercase;
     color: var(--second-title-text-color);
 }
@@ -55,9 +54,10 @@
 .footer-form__title {
     display: block;
     margin-bottom: 20px;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
+    // font-size: 14px;
+    // line-height: 1.14;
+    // letter-spacing: 0.03em;
+    @include font ();
     text-transform: uppercase;
     color: var(--second-title-text-color);
 }
@@ -76,10 +76,11 @@
     border-radius: 4px;
     outline: none;
     background-color: transparent;
-    font-size: 16px;
-    line-height: 1.25;
+    // font-size: 16px;
+    // line-height: 1.25;
+    // letter-spacing: 0.03em;
+    @include font ($fs:16px, $lh:1.25);
     align-items: center;
-    letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -91,12 +92,14 @@
 
 .footer-form__btn {
     display: flex;
-    font-size: 16px;
-    line-height: 1.87;
+    font-family: inherit;
+    // font-size: 16px;
+    // line-height: 1.87;
+    // letter-spacing: 0.06em;
+    @include font ($fs:16px, $lh:1.87, $ls:0.06em);
     align-items: center;
     text-align: center;
     justify-content: center;
-    letter-spacing: 0.06em;
     background-color:var(--text-accent);
     color: var(--second-title-text-color);
     cursor: pointer;

@@ -65,8 +65,8 @@ body {
 }
 
 .section__title {
-  font-weight: 700;
   font-size: 36px;
+  font-weight: 700;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-align: center;
@@ -172,32 +172,33 @@ body {
   fill: var(--text-accent);
 }
 
-.modal-title {
+.modal-form__title {
   display: block;
   text-align: center;
   margin-bottom: 12px;
-  font-weight: bold;
   font-size: 20px;
+  font-weight: 700;
   line-height: 1.15;
   letter-spacing: 0.03em;
   color: var(--main-title-color);
 }
 
-.modal-form-input-box {
+.modal-form__input-box {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
 }
 
-.modal-form-label {
+.modal-form__label {
   margin-bottom: 4px;
   font-size: 12px;
+  font-weight: 400;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: #757575;
 }
 
-.modal-form-input {
+.modal-form__input {
   height: 40px;
   width: 100%;
   padding-left: 42px;
@@ -206,20 +207,20 @@ body {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-form-input:focus {
+.modal-form__input:focus {
   border-color: var(--text-accent);
   outline: none;
 }
 
-.modal-form-input:focus + .modal-form-icon {
+.modal-form__input:focus + .modal-form__inpute-icon {
   fill: var(--text-accent);
 }
 
-.inpute-wrap {
+.modal-form__inpute-wrap {
   position: relative;
 }
 
-.modal-form-icon {
+.modal-form__inpute-icon {
   position: absolute;
   left: 12px;
   top: 50%;
@@ -228,39 +229,40 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-form-textarea-box {
+.modal-form__textarea-box {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
 }
 
-.modal-form-textarea {
+.modal-form__textarea {
   height: 120px;
   padding: 12px 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
-  box-sizing: border-box;
   border-radius: 4px;
   resize: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-form-textarea::placeholder {
+.modal-form__textarea::placeholder {
   font-size: 12px;
+  font-weight: 400;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 
-.modal-form-textarea:focus {
+.modal-form__textarea:focus {
   border-color: var(--text-accent);
   outline: none;
 }
 
-.policy {
+.modal-form__policy {
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 14px;
+  font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
@@ -268,7 +270,7 @@ body {
   margin-bottom: 30px;
 }
 
-.checkbox-custom {
+.modal-form__checkbox-custom {
   width: 16px;
   height: 15px;
   border: 2px solid #000000;
@@ -280,33 +282,34 @@ body {
   transition: background-color 250ms linear;
 }
 
-.check-icon {
+.modal-form__check-icon {
   fill: #FFFFFF;
 }
 
-.modal-link {
+.modal-form__policy-link {
   margin-left: 2px;
   text-decoration-line: underline;
   color: var(--text-accent);
 }
 
-.checkbox:checked + .policy .checkbox-custom {
+.modal-form__checkbox:checked + .modal-form__policy .modal-form__checkbox-custom {
   background-color: var(--text-accent);
   border: none;
 }
 
-.modal-form-button {
+.modal-form__button {
   margin: 0 auto;
   min-width: 200px;
   height: 50px;
-  font-weight: bold;
+  font-family: inherit;
   font-size: 16px;
+  font-weight: 700;
   line-height: 1.87;
+  letter-spacing: 0.06em;
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
-  letter-spacing: 0.06em;
   color: #FFFFFF;
   background: #2196F3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -316,14 +319,14 @@ body {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-form-button:hover, .modal-form-button:focus {
+.modal-form__button:hover, .modal-form__button:focus {
   background-color: #188CE8;
 }
 
 .logo {
   font-family: Raleway;
-  font-weight: 700;
   font-size: 26px;
+  font-weight: 700;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--text-accent);
@@ -357,12 +360,12 @@ body {
   padding-bottom: 25px;
 }
 
-.navigation {
+.navigation-box {
   display: flex;
   align-items: center;
 }
 
-.navigation__list {
+.navigation {
   display: flex;
 }
 
@@ -374,8 +377,8 @@ body {
   position: relative;
   padding-top: 32px;
   padding-bottom: 32px;
-  font-weight: 500;
   font-size: 14px;
+  font-weight: 500;
   line-height: 1.33;
   letter-spacing: 0.02em;
   color: var(--main-title-color);
@@ -407,10 +410,14 @@ body {
   margin-left: auto;
 }
 
+.contacts__item:first-child {
+  margin-right: 50px;
+}
+
 .contacts__link {
   display: flex;
-  font-weight: 500;
   font-size: 14px;
+  font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
@@ -420,10 +427,6 @@ body {
 
 .contacts__link:hover, .contacts__link:focus {
   color: var(--text-accent);
-}
-
-.contacts__item:first-child {
-  margin-right: 50px;
 }
 
 .contacts__icon {
@@ -448,8 +451,8 @@ body {
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 30px;
-  font-weight: 900;
   font-size: 44px;
+  font-weight: 900;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -458,12 +461,12 @@ body {
 
 .hero__btn {
   font-family: inherit;
-  font-weight: 700;
   font-size: 16px;
+  font-weight: 700;
   line-height: 1.87;
+  letter-spacing: 0.06em;
   align-items: center;
   text-align: center;
-  letter-spacing: 0.06em;
   background-color: var(--text-accent);
   color: var(--second-title-text-color);
   cursor: pointer;
@@ -495,8 +498,8 @@ body {
 
 .features__name {
   margin-bottom: 10px;
-  font-weight: 700;
   font-size: 14px;
+  font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -505,6 +508,7 @@ body {
 
 .features__text {
   font-size: 14px;
+  font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
@@ -544,8 +548,8 @@ body {
 }
 
 .works__name {
-  font-weight: bold;
   font-size: 14px;
+  font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -573,8 +577,8 @@ body {
 
 .team__title {
   margin-bottom: 10px;
-  font-weight: 500;
   font-size: 16px;
+  font-weight: 500;
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-align: center;
@@ -582,6 +586,8 @@ body {
 }
 
 .team__profession {
+  font-size: 16px;
+  font-weight: 400;
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-align: center;
@@ -630,7 +636,7 @@ body {
   background-color: var(--background-color-dark);
 }
 
-.footer__container {
+.footer-container {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
@@ -645,16 +651,20 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
   color: var(--second-title-text-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.address__link:hover, .address__link:focus {
-  color: var(--text-accent);
-}
-
 .address__link--color-grey {
   color: rgba(255, 255, 255, 0.6);
+}
+
+.address__link:hover, .address__link:focus {
+  color: var(--text-accent);
 }
 
 .join {
@@ -665,6 +675,7 @@ body {
   display: block;
   margin-bottom: 20px;
   font-size: 14px;
+  font-weight: 400;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -679,6 +690,7 @@ body {
   display: block;
   margin-bottom: 20px;
   font-size: 14px;
+  font-weight: 400;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -700,9 +712,10 @@ body {
   outline: none;
   background-color: transparent;
   font-size: 16px;
+  font-weight: 400;
   line-height: 1.25;
-  align-items: center;
   letter-spacing: 0.03em;
+  align-items: center;
   color: rgba(255, 255, 255, 0.6);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -713,12 +726,14 @@ body {
 
 .footer-form__btn {
   display: flex;
+  font-family: inherit;
   font-size: 16px;
+  font-weight: 400;
   line-height: 1.87;
+  letter-spacing: 0.06em;
   align-items: center;
   text-align: center;
   justify-content: center;
-  letter-spacing: 0.06em;
   background-color: var(--text-accent);
   color: var(--second-title-text-color);
   cursor: pointer;
@@ -751,11 +766,11 @@ body {
 
 .portfolio-filter__btn {
   font-family: inherit;
-  font-weight: 500;
   font-size: 16px;
+  font-weight: 500;
   line-height: 1.62;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   color: var(--main-title-color);
   background-color: var(--second-background-color);
   cursor: pointer;
@@ -797,11 +812,6 @@ body {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio__link:hover .portfolio__top-text,
-.portfolio__link:focus .portfolio__top-text {
-  transform: translateY(0);
-}
-
 .portfolio__thumb {
   padding: 20px 24px;
   border-right: 1px solid #EEEEEE;
@@ -810,15 +820,16 @@ body {
 }
 
 .portfolio__title {
-  font-weight: 700;
   font-size: 18px;
-  line-height: 2.00;
+  font-weight: 700;
+  line-height: 2;
   letter-spacing: 0.06em;
   color: var(--main-title-color);
 }
 
 .portfolio__text {
   font-size: 16px;
+  font-weight: 400;
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
@@ -834,6 +845,7 @@ body {
   top: 0;
   left: 0;
   font-size: 18px;
+  font-weight: 400;
   line-height: 1.56;
   letter-spacing: 0.03em;
   height: 100%;
@@ -842,5 +854,10 @@ body {
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio__link:hover .portfolio__top-text,
+.portfolio__link:focus .portfolio__top-text {
+  transform: translateY(0);
 }
 /*# sourceMappingURL=main.css.map */

@@ -19,21 +19,23 @@
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 30px;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    letter-spacing: 0.06em;
+    // font-weight: 900;
+    // font-size: 44px;
+    // line-height: 1.36;
+    // letter-spacing: 0.06em;
+    @include font ($fs:44px, $fw:900, $lh:1.36, $ls:0.06em);
     text-transform: uppercase;
     color:var(--second-title-text-color);
 }
 .hero__btn {
     font-family: inherit;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
+    // font-weight: 700;
+    // font-size: 16px;
+    // line-height: 1.87;
+    // letter-spacing: 0.06em;
+    @include font ($fs:16px, $fw:700, $lh:1.87, $ls:0.06em);
     align-items: center;
     text-align: center;
-    letter-spacing: 0.06em;
     background-color:var(--text-accent);
     color: var(--second-title-text-color);
     cursor: pointer;

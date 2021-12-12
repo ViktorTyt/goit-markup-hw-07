@@ -13,18 +13,20 @@
 
 .features__name {
     margin-bottom: 10px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
+    // font-weight: 700;
+    // font-size: 14px;
+    // line-height: 1.14;
+    // letter-spacing: 0.03em;
+    @include font ($fw:700);
     text-transform: uppercase;
     color: var(--main-title-color);
     }
     
 .features__text {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+    // font-size: 14px;
+    // line-height: 1.71;
+    // letter-spacing: 0.03em;
+    @include font ($lh:1.71);
     color: var(--main-text-color);
 }
 
