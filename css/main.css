@@ -189,6 +189,10 @@ body {
   margin-bottom: 10px;
 }
 
+.modal-form__inpute-wrap {
+  position: relative;
+}
+
 .modal-form__label {
   margin-bottom: 4px;
   font-size: 12px;
@@ -214,10 +218,6 @@ body {
 
 .modal-form__input:focus + .modal-form__inpute-icon {
   fill: var(--text-accent);
-}
-
-.modal-form__inpute-wrap {
-  position: relative;
 }
 
 .modal-form__inpute-icon {
