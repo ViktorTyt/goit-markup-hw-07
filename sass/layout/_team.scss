@@ -29,7 +29,7 @@
     color: var(--main-title-color);
 }
 
-.team__profession {
+.team__text {
     // line-height: 1.19;
     // letter-spacing: 0.03em;
     @include font ($fs:16px, $fw:400, $lh:1.19);

@@ -9,19 +9,19 @@
     color: var(--text-accent);
 }
 
-.logo--header {
+.logo__header {
     margin-right: 93px;
 }
 
-.logo--footer {
+.logo__footer {
     display: inline-block;
     margin-bottom: 20px;
 }
 
-.logo__item--dark {
+.logo__dark {
     color: #000000 
 }
 
-.logo__item--light {
+.logo__light {
     color:var(--second-title-text-color)
 }
