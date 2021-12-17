@@ -53,7 +53,7 @@ body {
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 320px;
+    width: 480px;
   }
 }
 
@@ -70,6 +70,11 @@ body {
 }
 
 .section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -453,46 +458,64 @@ body {
 }
 
 .hero {
+  padding: 118px 0;
   text-align: center;
   max-width: 1600px;
   margin: 0 auto;
   background-color: #C4C4C4;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 1200px) {
   .hero {
-    padding: 118px 0;
+    padding: 200px 0;
   }
 }
 
 .hero__title {
+  width: 240px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 1.62;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
   color: var(--second-title-text-color);
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 480px) {
   .hero__title {
-    width: 240px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 30px;
-    font-size: 16px;
+    width: 360px;
+    font-size: 26px;
     font-weight: 900;
     line-height: 1.62;
     letter-spacing: 0.06em;
-    text-transform: uppercase;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    width: 696px;
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
   }
 }
 
 .hero__btn {
+  min-width: 200px;
+  height: 50px;
+  align-items: center;
+  text-align: center;
+  background-color: var(--text-accent);
+  color: var(--second-title-text-color);
   font-family: inherit;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  align-items: center;
-  text-align: center;
-  background-color: var(--text-accent);
-  color: var(--second-title-text-color);
   cursor: pointer;
   border: transparent;
   border-radius: 4px;
@@ -510,8 +533,9 @@ body {
 }
 
 .features__item {
-  display: block;
-  width: 270px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 290px;
 }
 
 .features__item:not(:last-child) {

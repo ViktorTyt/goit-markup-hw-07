@@ -1,11 +1,14 @@
 
 .features {
     display: flex;
+
 }
 .features__item {
-    display: block;
-    width: 270px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 290px;
 
+   
     &:not(:last-child) {
         margin-right: 30px;
     }
